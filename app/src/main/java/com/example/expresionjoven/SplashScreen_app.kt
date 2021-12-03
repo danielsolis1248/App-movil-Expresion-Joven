@@ -17,6 +17,7 @@ class SplashScreen_app : AppCompatActivity() {
         setContentView(R.layout.splashscreen_design)
 
         exitSplasScreen()
+
     }
 
     private fun exitSplasScreen() {
