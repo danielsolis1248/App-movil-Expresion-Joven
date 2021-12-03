@@ -16,11 +16,11 @@ class SplashScreen_app : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.splashscreen_design)
 
-        exitSplasScreen()
+        salirSplasScreen()
 
     }
 
-    private fun exitSplasScreen() {
+    private fun salirSplasScreen() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
