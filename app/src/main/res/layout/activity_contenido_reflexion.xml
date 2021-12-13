@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReproductorAudio"
+   >
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imagen_reflexion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/universo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/titulo_reflexion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_margin="16dp"
+        android:lineSpacingExtra="8sp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="¿Tiene el universo un origen?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen_reflexion"/>
+
+    <ImageView
+        android:id="@+id/imagen_boton_reproducir"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_margin="27dp"
+        android:lineSpacingExtra="8sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/imagen_boton_play"
+        app:layout_constraintTop_toTopOf="@id/titulo_reflexion"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/boton_playpausa"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/imagen_boton_play"
+        android:shadowColor="@color/black"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="200dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/contenido_reflexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:lineSpacingExtra="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+
+        android:text="A finales del siglo XX, la creencia popular entre la counidad
+        cientifica era que el Universo era estatico, sin cambios, sin un comienzo y un final.
+        La idea de un universo sin un origen encaja perfectamente entre los que niegan
+la existencia de un Dios creador. Sin un comienzo no era necesario una explicacion de
+aquello que es, fue o sera; por lo tanto la necesidad de un ser inteligente que haya
+diseñado un Universo es innecesario. Estan era la postura de aquella epoca, como muestra
+de ello las palabras de uno de los mas grandes cientificos de esa epoca, llamado Pierre Simon
+Laplac. lo resume asi: No tengo tal necesida de tal hipotesis.
+"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_reflexion"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/contenido_reflexion"
+
+        >
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
